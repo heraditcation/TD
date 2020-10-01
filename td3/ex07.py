@@ -11,7 +11,8 @@ __status__ = "C/Python Dev + Master Git/Shell (zsh/sh)"
 
 liste = ["T","O","A","p","t","p","l","o","e","s","t","t","r","s","t","t","t","u","m","m","p"]
 # Methode avec le slicing (plus simple avec 'enumerate')
-print(liste[0::2])
+liste = liste[0::2]
+print(liste)
 
 # Methode avec enumerate (en com pour pas faire bug le code)
 """ 
@@ -23,4 +24,10 @@ for id, elem in enumerate(liste):
 # On fais un modulo 2 pour regarder les indince pair
 # Ex: 2 % 2 = 0 mais 3 % 2 = 1 
 # On a donc pour tt les nombre pair x % 2 = 0
-# Ainsi on affiche elem 
+# Ainsi on affiche elem
+
+liste.remove(liste[2])
+liste.remove(liste[4])
+liste.remove(liste[5])
+liste.remove(liste[5])
+print(liste)
