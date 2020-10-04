@@ -12,7 +12,7 @@ __status__ = "C/Python Dev + Master Git/Shell (zsh/sh)"
 mois = "Janvier", "Fevrier", "Mars", "Avril", "Mai", "Juin", "Juillet", "Aout" \
 ,"Septembre", "Octobre", "Novembre", "Decembre"
 n = int(input("Nombre? "))
-if n <= 11 and n >= 0:
-	print(mois[n])
+if n <= 12 and n >= 1:
+	print(mois[n-1])
 else:
 	print("Il n'y a que 12 mois dans l'année, IDIOT")
