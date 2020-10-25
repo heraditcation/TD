@@ -10,7 +10,6 @@ __status__ = "C/Python Dev + Master Git/Shell (zsh/sh)"
 """
 import numpy as np
 from numpy import *
-A = np.array([[1,1,1], [2,2,2], [3,3,3]])
-print(A,"\n")
-B = np.transpose(A)
-print(B)
+def transpoze(A):
+	B = np.transpose(A)
+	return B

@@ -12,8 +12,11 @@ import numpy as np
 from numpy import *
 from random import *
 
-def partition():
-	a = random.uniform(0,1)
-	print(a)
+def partition(n):
+	a = np.random.uniform(0,1,n)
+	b = np.array([0,1])
+	c = np.concatenate((a,b),axis=None)
+	c = np.sort(c)
+	print(c)
 
-partition()
+partition(9)
